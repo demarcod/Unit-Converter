@@ -13,5 +13,47 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  <ion-row>
+    
+ 
+
+      <ion-item id="select">
+          <ion-label>Metric</ion-label>
+          <ion-select placeholder="Select One" [(ngModel)]="vol" (ionChange)="convert()" >
+            <ion-select-option value="Lit">Litres</ion-select-option>
+            <ion-select-option value="Teas">Teaspoons</ion-select-option>
+            <ion-select-option value="Table">Tablespoons</ion-select-option>
+            <ion-select-option value="Cup">Cups</ion-select-option>
+            <ion-select-option value="Gal">Gallons</ion-select-option>
+            <ion-select-option value="Cub">Cubic Meters</ion-select-option>
+          </ion-select>
+        <br>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <p>to</p>
+        &nbsp;
+        &nbsp;
+        <ion-select placeholder="Select One" [selectedText]="vol" [(ngModel)]="cVol" (ionChange)="convert()" >
+            <ion-select-option value="Lit">Litres</ion-select-option>
+            <ion-select-option value="Teas">Teaspoons</ion-select-option>
+            <ion-select-option value="Table">Tablespoons</ion-select-option>
+            <ion-select-option value="Cup">Cups</ion-select-option>
+            <ion-select-option value="Gal">Gallons</ion-select-option>
+            <ion-select-option value="Cub">Cubic Meters</ion-select-option>
+        </ion-select>
+        
+      </ion-item>
+
+
+      
+
+  </ion-row>
+
+      <ion-input id="input"></ion-input>
+
+  <ion-row>
+
+  </ion-row>
 </ion-content>

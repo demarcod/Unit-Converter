@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { shadow } from '@ionic/core/dist/types/utils/transition/ios.transition';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,20 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  vol = "Litres";
+  cVol;
+  tap;
+
   constructor() {}
 
+
+  convert(){
+    
+  }
+
+  cupsToLitres(){
+
+  }
 }
+
+
