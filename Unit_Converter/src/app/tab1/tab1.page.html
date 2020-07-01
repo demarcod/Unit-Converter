@@ -13,5 +13,37 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  <ion-row>
+      <ion-item id="select">
+          <ion-label>Metric</ion-label>
+          <ion-select placeholder="Select One" [(ngModel)]="vol" [selectedText]="vol" (ionChange)="convert()" >
+            <ion-select-option value="Litres">Litres</ion-select-option>
+            <ion-select-option value="Teaspoons">Teaspoons</ion-select-option>
+            <ion-select-option value="Tablespoons">Tablespoons</ion-select-option>
+            <ion-select-option value="Cups">Cups</ion-select-option>
+          </ion-select>
+        <br>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <p>to</p>
+        &nbsp;
+        &nbsp;
+        <ion-select placeholder="Select One" [selectedText]="cVol" [(ngModel)]="cVol" (ionChange)="convert()" >
+            <ion-select-option value="Litres">Litres</ion-select-option>
+            <ion-select-option value="Teaspoons">Teaspoons</ion-select-option>
+            <ion-select-option value="Tablespoons">Tablespoons</ion-select-option>
+            <ion-select-option value="Cups">Cups</ion-select-option>
+        </ion-select>       
+      </ion-item>
+  </ion-row>
+
+      <ion-input id="input" [(ngModel)]="valu" (ionChange)="convert()"></ion-input>
+
+      <p id="select" >{{ans}}</p>
+  <ion-row>
+
+
+  </ion-row>
 </ion-content>
